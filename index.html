@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TesteLigaMagic</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="display">
+      <div id="card"><img width="350" height="489" src="./assets/card1.png" alt="Card Conterspell"></div>
+      <hr width="328">
+      <div class="carousel">
+        <button id="prev-btn" class="prev-btn">
+          <img src="./assets/Left_vector.svg" alt="Left_vector">
+        </button>
+        <div id="item-list" class="item-list">
+          <img id="item-1" class="active" src="./assets/card1.png">
+          <img id="item-2" src="./assets/card2.png">
+          <img id="item-3" src="./assets/card3.png">
+        </div>
+        <button id="next-btn" class="next-btn">
+          <img src="./assets/Right_vector.svg" alt="Right_vector">
+        </button>
+      </div>
+    </div>
+
+    <hr height="328">
+    <div class="content">
+      <div class="cardInfo">
+        <div class="breadcrumb">
+          Home
+          <hr>
+          Magic: the Gathering
+          <hr>
+          Busca
+          <hr>
+          Bazar - Lista de Desejos
+        </div>
+        <div class="select">
+          <img src="./assets/commom_flag.svg" alt="commom_flag">
+          <font style="font-weight: 600;">#45</font>
+          <select>
+            <option name="dominaria" value="dominariaRemastered">
+                Dominaria Remastered
+                |
+                <b>DRM</b>
+            </option>
+            <option name="magicfest" value="dominariaRemastered">
+              MagicFest2024
+              |
+              <b>DRM</b>
+            </option>
+            <option name="commanderMasters" value="dominariaRemastered">
+              Commander Masters
+              |
+              <b>DRM</b>
+            </option>
+          </select>
+
+        </div>
+        <div class="title">
+          <div class="name">
+            Contramágica
+            <div>
+              <button><img id="favorite" class="" src="./assets/favorite_icon.svg" alt="favorite_icon"></button>
+              <button><img src="./assets/options_icon.svg" alt="options_icon"></button>
+            </div>
+          </div>
+          <font color="#727270" style="font-style: italic">Counterspell</font>
+        </div>
+      </div>
+      <div class="shopping">
+        <div class="shopping_list">
+          Lista de compras
+          <button>
+            <img src="./assets/help_icon.svg" alt="help icon">
+          </button>
+        </div>
+        <font color="#727270">Add a carta aqui e deixe que a Liga calcule o melhor preço para você!</font>
+        <div class="buttons_cart">
+          <div class="qtd">
+            <button class="add_qtd"><img src="./assets/plus_icon_minor.svg" alt="plus_icon"></button>
+            <span id="card_qtd"></span>
+            <button class="sub_qtd"><img src="./assets/subtracting_icon.svg" alt="subtracting_icon"></div></button>
+          <button><img src="./assets/state_icon.svg" alt="state_icon"></button>
+          <button id="add_list" class=""><img  id="add_list_icon" src="./assets/plus_icon.svg" alt="plus_icon"> <span id="add_list_text"></span></button>
+        </div>
+      </div>
+      <div class="card_chart">
+        <div class="card_specs">
+          <div class="card_details">
+            Detalhes da carta
+            <button class="ver_tudo">Ver Tudo</button>
+          </div>
+          <div class="card_detail">Cor <font color="#0085FF">Azul</font></div>
+          <div class="card_detail">Custo de mana <div><img src="./assets/mana.svg" alt="mana"><img src="./assets/mana.svg" alt="mana"></div></div>
+          <div class="card_detail">Tipo <font color=#474745 weight=600>Mágica Instantânea</font></div>
+        </div>
+        <div class="card_price_chart">
+          <div class="price">
+            <div class="marketplace_price">
+              Preço Médio no Marketplace
+              <img src="./assets/help_icon.svg" alt="help icon">
+            </div>
+            <button class="ver_tudo">Ver Tudo</button>
+          </div>
+          <div class="chart">
+            <div class="extra">
+              <img src="./assets/letter-n-square.svg" alt="normal icon">
+              Normal
+            </div>
+            <div class="chart_price">
+              <hr style="border: 2px solid #69BC40; height: 24px;">
+              R$ 6,28
+              <hr style="border: 2px solid #DDC80B; height: 24px;">
+              R$ 9,39
+              <hr style="border: 2px solid #FF8B64; height: 24px;">
+              R$ 14,00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
